@@ -9,4 +9,4 @@ for(int t = 0; t < 2; t++)
     SetEntityPos("{0}sanity" + t, baseX + 1.0f + (t * 0.1f), baseY, baseZ);
 }}
 
-SetMessageExact("Liquid Courage for you!!!", 0.0f);
+SetMessageExact("Sanity Potions!", 0.0f);
