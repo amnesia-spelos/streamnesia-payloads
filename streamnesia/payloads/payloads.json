@@ -1,7 +1,6 @@
 [
     {
         "Name": "Surround with barrels",
-        "File": "barrels.payload",
         "Sequence": [
             { "File": "barrels.payload", "Delay": "00:00:00" }
         ]
@@ -15,7 +14,7 @@
     {
         "Name": "Jumpscare",
         "Sequence": [
-            { "File": "jumpscare.setup.payload", "Delay": "00:00:03" },
+            { "File": "jumpscare.setup.payload", "Delay": "00:00:00" },
             { "File": "jumpscare.exec.payload", "Delay": "00:00:03" },
             { "File": "jumpscare.clean.payload", "Delay": "00:00:04" }
         ]

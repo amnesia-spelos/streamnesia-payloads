@@ -1,4 +1,5 @@
 SetMessageExact("Brute is here...", 0.0f);
+
 float baseX = GetPlayerPosX();
 float baseY = GetPlayerPosY();
 float baseZ = GetPlayerPosZ();

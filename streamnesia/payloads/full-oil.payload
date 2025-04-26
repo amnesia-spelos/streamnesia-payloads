@@ -1,4 +1,4 @@
-SetMessageExact("Lucky you, full oil...", 0.0f);
+SetMessageExact("Full lantern oil!", 0.0f);
 
 PlayGuiSound("ui_use_oil.ogg", 1.0f);
 SetPlayerLampOil(100.0f);
