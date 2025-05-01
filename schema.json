@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "Name",
+      "Sequence"
+    ],
+    "properties": {
+      "Name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "Sequence": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "File",
+            "Delay"
+          ],
+          "properties": {
+            "File": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Delay": {
+              "type": "string",
+              "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}
