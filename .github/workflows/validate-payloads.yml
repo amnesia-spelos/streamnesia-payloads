@@ -1,0 +1,32 @@
+name: Validate Payloads
+
+on:
+  push:
+    paths:
+      - 'streamnesia/payloads/**/*.json'
+      - 'streamnesia/payloads/**/*.payload'
+      - '.github/workflows/validate-payloads.yml'
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli
+
+      - name: Validate JSON schema
+        run: |
+          ajv validate -s schema.json -d streamnesia/payloads/payloads.json
+
+      - name: Check referenced files and detect unreferenced ones
+        run: node check-files.js
