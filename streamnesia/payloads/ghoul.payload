@@ -1,14 +1,31 @@
 SetMessageExact("Ghoul is here...", 0.0f);
+
 float baseX = GetPlayerPosX();
 float baseY = GetPlayerPosY();
 float baseZ = GetPlayerPosZ();
-if(GetEntityExists("StreamnesiaGhoul"))
+
+SetPlayerHealth(100.0f);
+CreateEntityAtFirstArea("StreamnesiaGhoul_{0}", "ghoul.ent", true);
+
+float xMod = 0.0f;
+if (RandFloat(0.0f, 1.0f) < 0.5f)
 {{
-    SetEntityActive("StreamnesiaGhoul", true);
+    xMod = RandFloat(-2.5f, -0.8f);
 }}
 else
 {{
-    CreateEntityAtFirstArea("StreamnesiaGhoul", "ghoul.ent", true);
+    xMod = RandFloat(0.8f, 2.5f);
 }}
 
-SetEntityPos("StreamnesiaGhoul", baseX + 2.0f, baseY, baseZ);
+float zMod = 0.0f;
+if (RandFloat(0.0f, 1.0f) < 0.5f)
+{{
+    zMod = RandFloat(-2.5f, -0.8f);
+}}
+else
+{{
+    zMod = RandFloat(0.8f, 2.5f);
+}}
+
+SetEntityPos("StreamnesiaGhoul_{0}", baseX + xMod, baseY, baseZ + zMod);
+ShowEnemyPlayerPosition("StreamnesiaGhoul_{0}");

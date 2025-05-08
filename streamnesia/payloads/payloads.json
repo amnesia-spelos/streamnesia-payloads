@@ -20,10 +20,11 @@
         ]
     },
     {
-        "Name": "Spawn Brute for up to a minute",
+        "Name": "Spawn Brute (2 min)",
         "Sequence": [
             { "File": "spawn-brute.payload", "Delay": "00:00:00" },
-            { "File": "spawn-brute.anti.payload", "Delay": "00:00:40" }
+            { "File": "spawn-brute.alert.payload", "Delay": "00:00:02" },
+            { "File": "spawn-brute.anti.payload", "Delay": "00:02:00" }
         ]
     },
     {
@@ -197,12 +198,6 @@
         ]
     },
     {
-        "Name": "Spawn door near player",
-        "Sequence": [
-            { "File": "door.payload", "Delay": "00:00:00" }
-        ]
-    },
-    {
         "Name": "Spawn small cross",
         "Sequence": [
             { "File": "cross.payload", "Delay": "00:00:00" }
@@ -367,15 +362,17 @@
         ]
     },
     {
-        "Name": "Spawn water monster",
+        "Name": "Spawn water monster (Not Disappearing)",
         "Sequence": [
-            { "File": "spawn-water-monster.payload", "Delay": "00:00:00" }
+            { "File": "spawn-water-monster.payload", "Delay": "00:00:00" },
+            { "File": "spawn-water-monster.alert.payload", "Delay": "00:00:02"}
         ]
     },
     {
-        "Name": "Spawn suitor (not disappearing)",
+        "Name": "Spawn Suitor (Not Disappearing)",
         "Sequence": [
-            { "File": "spawn-suitor.payload", "Delay": "00:00:00" }
+            { "File": "spawn-suitor.payload", "Delay": "00:00:00" },
+            { "File": "spawn-suitor.alert.payload", "Delay": "00:00:02"}
         ]
     },
     {
@@ -405,8 +402,7 @@
     {
         "Name": "Spawn Ghoul",
         "Sequence": [
-            { "File": "ghoul.payload", "Delay": "00:00:00" },
-            { "File": "ghoul.anti.payload", "Delay": "00:00:10" }
+            { "File": "ghoul.payload", "Delay": "00:00:00" }
         ]
     },
     {
@@ -453,7 +449,12 @@
             { "File": "random-yeet.payload", "Delay": "00:00:02" },
             { "File": "random-yeet.payload", "Delay": "00:00:03" },
             { "File": "random-yeet.payload", "Delay": "00:00:03" },
-            { "File": "random-yeet.payload", "Delay": "00:00:03" }
+            { "File": "random-yeet.payload", "Delay": "00:00:03" },
+            { "File": "random-yeet.payload", "Delay": "00:00:04" },
+            { "File": "random-yeet.payload", "Delay": "00:00:04" },
+            { "File": "random-yeet.payload", "Delay": "00:00:04" },
+            { "File": "random-yeet.payload", "Delay": "00:00:10" },
+            { "File": "random-yeet.payload", "Delay": "00:00:25" }
         ]
     },
     {
@@ -476,6 +477,21 @@
         "Name": "Slime Attack",
         "Sequence": [
             { "File": "slime_attack_normal.payload", "Delay": "00:00:00" }
+        ]
+    },
+    {
+        "Name": "Give Lantern",
+        "Sequence": [
+            { "File": "give-lantern.payload", "Delay": "00:00:00" }
+        ]
+    },
+    {
+        "Name": "Raining Bread",
+        "Sequence": [
+            { "File": "bread-rain.step.payload", "Delay": "00:00:00" },
+            { "File": "bread-rain.step.payload", "Delay": "00:00:02" },
+            { "File": "bread-rain.step.payload", "Delay": "00:00:05" },
+            { "File": "bread-rain.step.payload", "Delay": "00:00:08" }
         ]
     }
 ]

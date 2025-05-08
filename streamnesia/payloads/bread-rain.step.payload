@@ -1,0 +1,16 @@
+float baseX = GetPlayerPosX();
+float baseY = GetPlayerPosY();
+float baseZ = GetPlayerPosZ();
+
+float yOffset = 2.5f;
+
+for(int x = -1; x < 2; x++)
+{{
+    for(int z = -1; z < 2; z++)
+    {{
+        CreateEntityAtFirstArea("bread_{0}_" + x + z, "bread_rotten.ent", false);
+        SetEntityPos("bread_{0}_" + x + z, baseX + x, baseY + yOffset, baseZ + z);
+    }}  
+}}
+
+SetMessageExact("Bread =)", 0.0f);

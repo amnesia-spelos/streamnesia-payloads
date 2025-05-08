@@ -1,1 +1,3 @@
+string[] test = {{ "Yeet!", "HA!", "Get over here!" , "Come here!", "Nope", "Weeee!", "Hahaaa!" }};
+SetMessageExact(test[RandInt(0, 6)], 0.0f);
 AddPlayerBodyForce(RandFloat(-50000.0f, 50000.0f), RandFloat(-50000.0f, 50000.0f), RandFloat(-50000.0f, 50000.0f), true);

@@ -13,4 +13,24 @@ else
     CreateEntityAtFirstArea("StreamnesiaWatermonster", "waterlurker.ent", true);
 }}
 
-SetEntityPos("StreamnesiaWatermonster", baseX + 2.0f, baseY, baseZ);
+float xMod = 0.0f;
+if (RandFloat(0.0f, 1.0f) < 0.5f)
+{{
+    xMod = RandFloat(-2.5f, -0.8f);
+}}
+else
+{{
+    xMod = RandFloat(0.8f, 2.5f);
+}}
+
+float zMod = 0.0f;
+if (RandFloat(0.0f, 1.0f) < 0.5f)
+{{
+    zMod = RandFloat(-2.5f, -0.8f);
+}}
+else
+{{
+    zMod = RandFloat(0.8f, 2.5f);
+}}
+
+SetEntityPos("StreamnesiaWatermonster", baseX + xMod, baseY, baseZ + zMod);
