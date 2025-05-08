@@ -1,0 +1,2 @@
+SetMessageExact("You were given a lantern!", 0.0f);
+GiveItem("Lantern", "Lantern", "Lantern", "lantern.tga", 1.0f);

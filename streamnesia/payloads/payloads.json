@@ -473,5 +473,11 @@
         "Sequence": [
             { "File": "slime_attack_normal.payload", "Delay": "00:00:00" }
         ]
+    },
+    {
+        "Name": "Give Lantern",
+        "Sequence": [
+            { "File": "give-lantern.payload", "Delay": "00:00:00" }
+        ]
     }
 ]
