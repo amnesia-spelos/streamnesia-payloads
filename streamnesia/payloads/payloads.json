@@ -20,10 +20,11 @@
         ]
     },
     {
-        "Name": "Spawn Brute for up to a minute",
+        "Name": "Spawn Brute (2 min)",
         "Sequence": [
             { "File": "spawn-brute.payload", "Delay": "00:00:00" },
-            { "File": "spawn-brute.anti.payload", "Delay": "00:00:40" }
+            { "File": "spawn-brute.alert.payload", "Delay": "00:00:02" },
+            { "File": "spawn-brute.anti.payload", "Delay": "00:02:00" }
         ]
     },
     {
@@ -361,15 +362,17 @@
         ]
     },
     {
-        "Name": "Spawn water monster",
+        "Name": "Spawn water monster (Not Disappearing)",
         "Sequence": [
-            { "File": "spawn-water-monster.payload", "Delay": "00:00:00" }
+            { "File": "spawn-water-monster.payload", "Delay": "00:00:00" },
+            { "File": "spawn-water-monster.alert.payload", "Delay": "00:00:02"}
         ]
     },
     {
-        "Name": "Spawn suitor (not disappearing)",
+        "Name": "Spawn Suitor (Not Disappearing)",
         "Sequence": [
-            { "File": "spawn-suitor.payload", "Delay": "00:00:00" }
+            { "File": "spawn-suitor.payload", "Delay": "00:00:00" },
+            { "File": "spawn-suitor.alert.payload", "Delay": "00:00:02"}
         ]
     },
     {

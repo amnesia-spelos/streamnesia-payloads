@@ -1,2 +1,5 @@
-SetMessageExact("Brute left...", 0.0f);
-SetEntityActive("StreamnesiaBrute", false);
+if (GetEntityExists("StreamnesiaBrute"))
+{{
+    SetEntityActive("StreamnesiaBrute", false);
+    SetMessageExact("Brute left...", 0.0f);
+}}
