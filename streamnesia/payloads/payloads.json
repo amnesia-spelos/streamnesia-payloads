@@ -399,8 +399,7 @@
     {
         "Name": "Spawn Ghoul",
         "Sequence": [
-            { "File": "ghoul.payload", "Delay": "00:00:00" },
-            { "File": "ghoul.anti.payload", "Delay": "00:00:10" }
+            { "File": "ghoul.payload", "Delay": "00:00:00" }
         ]
     },
     {
