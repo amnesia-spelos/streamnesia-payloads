@@ -197,12 +197,6 @@
         ]
     },
     {
-        "Name": "Spawn door near player",
-        "Sequence": [
-            { "File": "door.payload", "Delay": "00:00:00" }
-        ]
-    },
-    {
         "Name": "Spawn small cross",
         "Sequence": [
             { "File": "cross.payload", "Delay": "00:00:00" }
