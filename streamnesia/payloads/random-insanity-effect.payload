@@ -1,3 +1,4 @@
+SetMessageExact("Insanity!", 0.0f);
 StartRandomInsanityEvent();
 StartRandomInsanityEvent();
 StartRandomInsanityEvent();
