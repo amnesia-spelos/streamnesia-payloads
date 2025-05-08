@@ -484,5 +484,14 @@
         "Sequence": [
             { "File": "give-lantern.payload", "Delay": "00:00:00" }
         ]
+    },
+    {
+        "Name": "Raining Bread",
+        "Sequence": [
+            { "File": "bread-rain.step.payload", "Delay": "00:00:00" },
+            { "File": "bread-rain.step.payload", "Delay": "00:00:02" },
+            { "File": "bread-rain.step.payload", "Delay": "00:00:05" },
+            { "File": "bread-rain.step.payload", "Delay": "00:00:08" }
+        ]
     }
 ]
