@@ -2,7 +2,7 @@
   ".github/",
   "LICENSE",
   "README.md",
-  "check-files.json",
+  "check-files.js",
   "schema.json",
   "streamnesia-ignore.json"
 ]
